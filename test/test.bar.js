@@ -40,5 +40,15 @@ describe("Bar", function() {
 
   });
 
+  describe("cipher", function() {
+
+    it("ciphers a string by finding characters 100 unicode values higher than its assigned value", function() {
+
+      var string = "cipher me";
+      expect(bar.cipher(string)).eq("ÇÍÔÌÉÖÑÉ");
+
+    });
+    
+  });
 
 });
