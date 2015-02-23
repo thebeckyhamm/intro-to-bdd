@@ -48,6 +48,17 @@ describe("Bar", function() {
       expect(bar.cipher(string)).eq("ÇÍÔÌÉÖÑÉ");
 
     });
+
+  });
+
+  describe("decipher", function() {
+
+    it("deciphers a string previously ciphered by moving value back 100 unicode characters", function() {
+
+      var string = "ÇÍÔÌÉÖÑÉ";
+      expect(bar.decipher(string)).eq("cipher me");
+
+    });
     
   });
 
