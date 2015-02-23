@@ -50,8 +50,8 @@ describe("Foo", function() {
   describe("greet", function() {
 
     it("greets a specified name", function() {
-      expect( foo.greet("JavaScript") ).eq("Hello, JavaScript!");
-      expect( foo.greet("Testing")    ).eq("Hello, Testing!");
+      expect( Foo.greet("JavaScript") ).eq("Hello, JavaScript!");
+      expect( Foo.greet("Testing")    ).eq("Hello, Testing!");
     });
 
   });

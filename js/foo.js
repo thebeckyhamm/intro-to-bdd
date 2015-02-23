@@ -1,7 +1,9 @@
 window.Foo = (function() {
 
   function Foo() {
-
+    // this.greet = function(name) {
+    //   return "Hello, " + name + "!";
+    // }
   }
 
   Foo.prototype = {
@@ -16,10 +18,6 @@ window.Foo = (function() {
 
     hasValue: function(arr, value) {
         return _.contains(arr, value);
-    },
-
-    greet: function(name) {
-        return "Hello, " + name + "!";
     }
 
   };
@@ -27,3 +25,7 @@ window.Foo = (function() {
   return Foo;
 
 })();
+
+Foo.greet = function(name) {
+  return "Hello, " + name + "!";
+};
