@@ -59,6 +59,17 @@ describe("Bar", function() {
       expect(bar.decipher(string)).eq("cipher me");
 
     });
+
+  });
+
+  describe("rot13", function() {
+
+    it("encrypts a string by moving characters over by 13", function() {
+
+      var string = "i am a secret";
+      expect(bar.rot13(string)).eq("v nz n frperg");
+
+    });
     
   });
 
