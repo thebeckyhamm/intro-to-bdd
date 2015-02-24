@@ -23,8 +23,9 @@ describe("Bar", function() {
 
   describe("exponentOf", function() {
 
-    it("returns a function", function() {
-      expect( typeof bar.exponentOf ).eq("function");
+    it("finds the exponent of a number", function() {
+      var exponentOf3 = bar.exponentOf(3);
+      expect( exponentOf3(3) ).eq(27);
     });
 
   });
@@ -70,7 +71,7 @@ describe("Bar", function() {
       expect(bar.rot13(string)).eq("v nz n frperg");
 
     });
-    
+
   });
 
 });
